@@ -17,7 +17,7 @@ const mongoose = require("mongoose");
 app.use("/api/users", users);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/social_project",
+  process.env.MONGO_URI || "mongodb://localhost/social_project",
   {
     useMongoClient: true
   }
